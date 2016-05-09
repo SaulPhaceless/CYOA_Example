@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="templateCYOAGame">
+    <meta name="author" content="nickgutierrez">
+
+    <title>CYOA - Template</title>
+
+    <link type="text/css" rel="stylesheet" href="normalize.css">
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+    <div id="header">
+        <h1>TITLE</h1>
+        <h3>A Choose Your Own Adventure Story Game.</h3>
+        <h5>By NAME</h5>
+    </div>
+    
+    <div id="mainContent">
+        <div class="option current" id="start">
+            <p>Introduction</p>
+            <p>Are you ready to play?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('start', 'opt00')" id="startGame" type="button">Start Game</button>
+            </div>
+        </div>
+        
+        <div class="option hidden" id="opt00">
+            
+            <p>Choice 00</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt00', 'opt1A')" id="button1A" type="button">Choice 1A</button>
+                <button onclick="optionSelect('opt00', 'opt1B')" id="button1B" type="button">Choice 1B</button>
+            </div>
+        </div>
+        
+        <div class="option hidden" id="opt1A">
+            <p>Choice 1A</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1A', 'opt2AA')" id="button2AA" type="button">2AA</button>
+                <button onclick="optionSelect('opt1A', 'opt2AB')" id="button2AB" type="button">2AB</button>
+            </div>
+        </div>
+                <div class="option hidden" id="opt2AA">
+                    <p>Choice 2AA</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2AA', 'opt3AAA')" type="button">3AAA</button>
+                        <button onclick="optionSelect('opt2AA', 'opt3AAB')" type="button">3AAB</button>
+                    </div>
+                </div>
+                
+                         <div class="option hidden" id="opt3AAA">
+                            <p>End 3AAA</p>
+                        </div>
+                
+                         <div class="option hidden" id="opt3AAB">
+                            <p>End 3AAB</p>
+                        </div>
+                        
+                <div class="option hidden" id="opt2AB">
+                    <p>Choice 2AB</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2AB', 'opt3ABA')" type="button">3ABA</button>
+                        <button onclick="optionSelect('opt2AB', 'opt3ABB')" type="button">3ABB</button>
+                    </div>
+                </div>
+                        
+                        <div class="option hidden" id="opt3ABA">
+                            <p>End 3ABA</p>
+                        </div>
+                
+                         <div class="option hidden" id="opt3ABB">
+                            <p>End 3ABB</p>
+                        </div>
+                        
+                        
+        <div class="option hidden" id="opt1B">
+            <p>Choice 1B</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1B', 'opt2BA')" id="button2BA" type="button">2BA</button>
+                <button onclick="optionSelect('opt1B', 'opt2BB')" id="button2BB" type="button">2BB</button>
+            </div>
+        </div>
+                <div class="option hidden" id="opt2BA">
+                    <p>Choice 2BA</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BA', 'opt3BAA')" type="button">3BAA</button>
+                        <button onclick="optionSelect('opt2BA', 'opt3BAB')" type="button">3BAB</button>
+                    </div>
+                </div>
+                
+                         <div class="option hidden" id="opt3BAA">
+                            <p>End 3BAA</p>
+                        </div>
+                
+                         <div class="option hidden" id="opt3BAB">
+                            <p>End 3BAB</p>
+                        </div>
+                        
+                <div class="option hidden" id="opt2BB">
+                    <p>Choice 2BB</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BB', 'opt3BBA')" type="button">3BBA</button>
+                        <button onclick="optionSelect('opt2BB', 'opt3BBB')" type="button">3BBB</button>
+                    </div>
+                </div>
+                        
+                        <div class="option hidden" id="opt3BBA">
+                            <p>End 3BBA</p>
+                        </div>
+                
+                         <div class="option hidden" id="opt3BBB">
+                            <p>End 3BBB</p>
+                        </div> 
+ 
+        
+    </div>
+    
+    
+        <script> 
+        
+        function optionSelect(cur, sel){
+            document.getElementById(cur).className= 'option hidden';
+            document.getElementById(sel).className = 'option current';
+        
+        }
+</script>
+</body>

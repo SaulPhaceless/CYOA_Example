@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="templateCYOAGame">
+    <meta name="author" content="nickgutierrez">
+
+    <title>CYOA - Aaron Swartz</title>
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="normalize.css">
+    <link type="text/css" rel="stylesheet" href="example.css">
+
+
+
+</head>
+<body>
+    <div id="header">
+        <h1>Aaron Swartz</h1>
+        <h3>A Choose Your Own Adventure Story Game.</h3>
+        <h5>By Nick Gutierrez</h5>
+    </div>
+    
+    <div id="mainContent">
+        <div class="option current" id="start">
+            <h3>Introduction...</h3>
+            
+            <img src="http://blogs.reuters.com/mediafile/files/2013/01/RTR3CENN.jpg">
+            
+            <p>Aaron Swartz was a prodigy. A young computer genius. "A mind in a million", or so said one of mentors. Aaron's goal for most of his life was to save the world.  He felt the way to do this was to make sure people were informed and educated. He didn't believe that there should be any gates or barriers to learning. You shouldn't have to pay to get an education, and you shouldn't have to pay to learning something new online. This belief eventually got him into trouble. Which path actually happened is up to you to figure out.</p> 
+            
+            <p>You will journey through this young man's life, taking on the role of seperate important people in Aaron's life.</p>
+            <p>Are you ready to play?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('start', 'opt00')" id="startGame" type="button">Start Game</button>
+            </div>
+        </div>
+        
+        <div class="option hidden" id="opt00">
+
+                        
+            <h3>Our story begins...</h3>
+            
+            <p><strong>2002, in Highland Park Illinois.</strong></p>
+
+            <p>You take the role of Aaron Swartz's parents, Robert and Susan. You are raising 3 boys: Noah, Ben and Aaron. All three kids are bright, but Aaron seemed to develop faster then his brothers did. Mentally, that is. Aaron was small for his age, but had begun to walk and talk much earlier then most children. At the age of 3, Aaron started to read complete sentences. At age 4, Aaron, a precocious child, stumbled upon some programs on the family computer. Aaron figured out how to work the programs, like Microsoft Paint and even more complicated programs without any help. Before turning 10, Aaron had learned several programming languages and had worked hours on end creating Star Wars trivia games with his brothers.</p>
+            
+            <p>Aaron started struggling in school in junior high. He had trouble making friends, and got into arguments with his teachers. He started to get quiet and withdrawn. You later discover it's because he has been working on a project creating something called "RSS".  He says it lets you take updates from any website you want and creates a "feed" with a digest of the information. You don't really know what that means, but he seems really excited about it, and thinks it could help a lot of people. The thing that worries you is that he is only 13, and is working with adults.</p>
+            
+            <img src="http://techzulu.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-21-at-10.40.19-AM.png">
+            
+            <p>Because of his work on RSS, he is asked to join W3C, the  World Wide Web Consortium. He is asked to fly out to a conference, and you take him. Everyone was surprised to learn how young Aaron was, and you can tell that this both pleased him and annoyed him. He liked to surprise people, as it means he got to show off. But he also hated not being taken seriously. He began to work with the very people who created and maintain the internet. He kept talking about "Web 2.0", which he says he is working on. He claims it will change the world. You think that maybe he is just being overly enthusiastic, as kids tend to do. At a conference, one of your 14 year old's adult collegue tells you that, in fact, the work Aaron was doing would have a tremendous impact on the way people use the interent.</p>
+            
+           <p> A little over a year has gone by, and now, as Aaron is finishing his freshman year in high school, he gets an invite to take college classes, but it would mean he would have to drop out of high school. He could handle the work, without a doubt. But he wouldn't learn to socialize with people his own age. Other than his brothers, Aaron rarely had positive interactions with other teenagers. You worry that taking him out of high school would stunt his social/emotional development.</p>
+           
+            <img src="http://cdn.arstechnica.net/wp-content/uploads/2013/01/110171721_5ed51b124d_o-640x426.jpg">
+            
+           <p> You now have to decide. Do you keep Aaron in high school in order to make sure he keeps growing socially, and have him pursue his interests outside of school, or do you let Aaron drop out and start going to college at the age of 15?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt00', 'opt1A')" id="button1A" type="button">You keep Aaron in high school to socialize.</button>
+                <button onclick="optionSelect('opt00', 'opt1B')" id="button1B" type="button">You let him drop out of high school.</button>
+            </div>
+        </div>
+        
+        <div class="option hidden" id="opt1A">
+            <p>You now take on the role of Aaron Swartz himself. Your parents make you stay in high school. They tell you it will be good for you, and help you to learn how to socialize. It doesn’t go well. You still maintain your connections with WC3 and RSS, but you can’t get much work done. You find that you are kept busy by meaningless work about things you don’t care about. Eventually you get sick of it, and midway through your senior year, you stop attending school. You don’t drop out, but you have been failing classes for a while, and you don’t graduate. Even after scoring a near perfect ACT score, you can’t get into any colleges because of your grades and GPA.</p>
+
+            <p>You know you will be ok though. You have been doing work outside of academia. You continue with your projects for a while. RSS comes out and is a success, and you have done some work on reworking United States Copyright law. But you have grown bitter and angry at being locked out of higher education. You start lashing out, and eventually your peers see you as the teenager you are, and decide you are too immature to continue working with them. They freeze you out of the projects, and while they give you credit, they don’t let take the credit you felt you deserved.</p>
+            
+            <p>You realize that you need to use your skills for yourself, and by yourself.</p>
+            
+            <p>You have a choice to make. Do you become a White Hat Hacker (the Good ones) or a Black Hat Hacker (the Bad guys)?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1A', 'opt2AA')" id="button2AA" type="button">White Hat</button>
+                <button onclick="optionSelect('opt1A', 'opt2AB')" id="button2AB" type="button">Black Hat</button>
+            </div>
+        </div>
+                <div class="option hidden" id="opt2AA">
+                    <p>You can’t get a good job, because you gained a reputation of being a mean spirited person. You don’t have a high school diploma either. Your family offers to help, but you never liked needing anyone for anything, so you start turning to your knowledge and skills to earn you money directly. </p>
+
+                    <p>But you still believe in your mission to save the world.</p>
+                    
+                    <p>You spend months researching different things you can do to try and help the world. You learn of a weakness in FedLoan’s security. FedLoan is one of the world's largest lenders for Student Loans in America. You think you can get in and delete all of the data on student loans in America. It’s risky, but you think you can do it.</p>
+                    
+                    <p>You also learn about a United States Senator that has been trading illegal child pornography. He knows the identity of several predators that have been preying on children around the world. You know that you can expose him, and help a lot of children.</p>
+                    
+                    <p>You have to make a decision. Do you hack FedLoan, or do you hack the pedophile Senator?</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2AA', 'opt3AAA')" type="button">Hack Fedloan</button>
+                        <button onclick="optionSelect('opt2AA', 'opt3AAB')" type="button">Hack the Senator</button>
+                    </div>
+                </div>
+                
+                         <div class="option hidden" id="opt3AAA">
+                            <p>You decide to hack FedLoan. You attempt to delete all of the records to help millions of people struggling to pay for their education. Except a lot of very rich people could lose a lot of money. So they hire hackers to find you. And they do. You get caught a few days later.</p>
+                            
+                            <p>The lender's claim you attempted to steal money from them, despite not taking a single dime for yourself. The lender’s push for a harsh sentence, and donate money to the right people to make sure you get life in prison. They also sue you and your family, bankrupting them.</p> 
+                            
+                            <p>But the world backs you up. They donate money to you and your family, and you are able to hire a good lawyer. After years of legal battles, you eventually get off with a slap on the wrist due to a technicality. You found records that you were hacked in order to find who you were, which was made illegal by the very people who are prosecuting you.</p>
+                            
+                            <p>The years of legal battles took their toll however. You have always had anxiety issues, and you had to “dull the edge” with painkillers. You become addicted, and lose your credibility as a result. You fade from the public eye, having not really accomplishing anything.</p>
+                            
+                            <p class="gameOver">GAME OVER</p>
+                                                    <div id="controls">
+                            <button type="button" onClick="history.go(0)">Click to Replay</button>
+                        </div>
+
+                        </div>
+                
+                         <div class="option hidden" id="opt3AAB">
+                            <p>You decide to hack the Senator. You start by blackmailing him to give up the names of other pedophiles, which he does. You turn over all of your information to the authorities. But you know that they wouldn’t take it seriously unless they knew where the information came from. So you step forward after a few days after the leak is reported on in the news. You expect to be received as a hero. The public does, but the government takes it seriously, and arrest you for illegal hacking. Regardless of the good that came out of it, you still broke the law.</p>
+
+                            <p>The senator and everyone that you outed were arrested. Each of them gives up more names, and one of the largest child porn rings in America is decimated. Everyone sees the good in what you did, but ultimately, you broke the law. The courts take it easy on you. You get 6 months house arrest, but you retain access to your computer. You become known as a social justice warrior, and use to help more people. You join Hactivist groups, always insulating yourself from anything illegal, but become a public voice for cyber vigilantes, people who use their knowledge to help people. </p>
+                            <p class="gameOver">GAME OVER</p>
+                                                    <div id="controls">
+                            <button type="button" onClick="history.go(0)">Click to Replay</button>
+                        </div>
+
+                        </div>
+                        
+                <div class="option hidden" id="opt2AB">
+                    <p>You can’t get a good job, because you gained a reputation of being a mean spirited person. You don’t have a high school diploma either. Your family offers to help, but you never liked needing anyone for anything, so you start turning to your knowledge and skills to earn you money directly. </p>
+
+                    <p>You start hacking people. </p>
+                    
+                    <p>You target bad people, those that hurt others. You don’t like to hurt people, but you believe in punishment. So you go after criminals, and you steal credit card numbers and money. You stay small scale to avoid attention, but you are good at it. Very good. You gain a reputation online as being uncatchable. A Ghost.</p>
+                    
+                    <p>You turn into a hacker for hire. People hire you to hack people for them, and make decent money with it. You get contacted by a United State Senator’s aide. You are asked to remove any association or mention of the Senators from his mistress’ phones and computers. You are asked to delete evidence that would put a corrupt Senator in jail. You do it, because you see it as a way in. If you do this for the Senator, you then have something to hold over the Senator and can control him.</p>
+                    
+                    <p>After you do the job, you get paid. A few days later, you hear a knock on the door. You know your parents aren’t home so you go and answer it.</p>
+                    
+                    <p>2 hours later, your mother comes home with dinner. She knew that you were supposed to be home, waiting for the fridge repair man. But she can’t find you anywhere. She checks your room, and that the computers are gone. She finds a printed note, unsigned on the bed. Nothing else is gone, not even your clothes or money. It says:
+                    
+                           <p> “I have left the country. Don’t come looking for me. You will not find me.”
+                    
+                    <p>Except you don’t have a passport. </p>
+                    
+                    
+                    <p class="gameOver">GAME OVER</p>
+                                            <div id="controls">
+                            <button type="button" onClick="history.go(0)">Click to Replay</button>
+                        </div>
+
+                </div>
+
+                        
+        <div class="option hidden" id="opt1B">
+            <p>You now take on the role of Aaron Swartz himself. Your parents let you drop out of high school and attend college at 15. You know it's going to be a challenge, but you are okay with that. You know that you would never be able to get along with the other kids at school. But you also hate being looked down on for being so young. That's why you like the internet so much. You can be anyone. No one has to know that you are only 15.</p>
+
+            <p>Until they ask to meet you. You were working on RSS for a few months, and you never actually lied about not being an adult, you didn't tell them. They eventually asked to meet you at a conference, so they could unveil your hard work. Ultimately, you were central to finishing it, so they felt that you should get credit for it. You debated lying about how you were sickly and couldn't travel, but you realize that would ultimately work against you.  What would happen when you got older? </p>
+            
+            <p>You decide to tell them "I don't think my mom would like that... but I can go ask." </p>
+            
+            <p>The entire RSS team was surprised, but luckily, most of them were fine with it. A few thought it was weird, but eventually came around.</p>
+            
+            <img class="smaller" src="http://aukabusiness.com/wp-content/uploads/2013/06/bigrss.gif">
+            
+            <p>You continue your work with RSS and W3C, and you start getting fairly well known. This was both awesome and annoying. It's great that people were paying attention to you, and they were respecting the work you did. But you also had to deal with people looking down on you, literally and figuratively. Just before your 16th birthday, you get in a conversation with people who worried about the future of the internet. Copyright law has been halting progress for years, but it was becoming untenable. That is when you switch gears to studying law.</p>
+            
+            <img src="http://img.wonderhowto.com/img/89/05/63481765268007/0/your-guide-finding-free-creative-commons-images-and-other-media-online.1280x600.jpg">
+            
+            <p>You help to develop the Creative Commons License, which lets people copyright their materials with a few different options and protections. You can make your work public for anyone to use under certain conditions, such as for non-commercial use. This made it so pictures, movies, code and ideas could be shared without having to worry about who owns it. This revolutionizes the internet, and makes it so people can collaborate. It gets picked up by artists all over the world and used. Eventually, even big tech companies like Google would start using it. The Android phone platform takes off because the Android Operating system was released to the world under the Creative Commons License.</p>
+            
+            <p>After a few years, RSS is released to the world. It lets bloggers make their work known, and changes how podcasts, videos and news are shared to the world, and how people access this content. It does exactly what you and your team thought it would do. </p>
+            
+            <p>You decide to take the RSS technology, which was released under Creative Commons, and try to launch a new website which was a website content manager, called Infogami.</p>
+            
+            <img src="http://assets.sbnation.com/assets/2045785/aaronswartz_infogami.jpg">
+            
+            <p>It tanks. Hard. It doesn’t take off, despite the following you had earned. You can’t seem to figure out what was missing from it. A friend eventually points you to a group of people trying to develop Reddit as a social network.</p>
+            
+            <p>You have to make a decision. Do you continue to try and figure out Infogami by yourself, or do you merge your project with Reddit to try and create something new.</p>
+                
+            <div id="controls">
+                <button onclick="optionSelect('opt1B', 'opt2BA')" id="button2BA" type="button">Continue to work on Infogami by yourself.</button>
+                <button onclick="optionSelect('opt1B', 'opt2BB')" id="button2BB" type="button">Join the Reddit team.</button>
+            </div>
+        </div>
+                <div class="option hidden" id="opt2BA">
+                    <p>You decide to work on Infogami alone. You work hard to try and make it work. You put all of your time and money into it, knowing that it would eventually take off. Everything you had worked on in the past had worked out. </p>
+
+                    <p>Eventually, you are offered a buyout for the company. mySpace wants your algorithm, but the actual product itself. They would abandon the idea behind Infogami.</p>
+                    
+                    <p>You decide to not take the buyout, turning away several million dollars in the process. You redouble your efforts, and drop out of college to pursue it. You use the fame you gained from being a prodigy to push people to use it, but ultimately it fails. </p>
+                    
+                    <p>You go bankrupt in the process. Your reputation is ruined. You have to work part time at a Best Buy to pay the bills. You develop a drinking problem, and while you reminisce about the good days, when your life help the promise of greatness, you commit suicide at the age of 32.</p>
+                    
+                    <p class="gameOver">GAME OVER</p>
+                                            <div id="controls">
+                            <button type="button" onClick="history.go(0)">Click to Replay</button>
+                        </div>
+
+                    </div>
+                        
+                <div class="option hidden" id="opt2BB">
+                    <p>You decide to join forces with Reddit. You launch the website, and it took off. It became the front page of the internet, the place in which many internet citizens communicate and share information. It’s almost your ideal program, and you are proud of it. </p>
+                    
+                    <img src="http://socialdrive.us/wp-content/uploads/2013/04/Reddit_logo-2.jpg">
+
+                    <p>After just a few months, you and your partners get a buyout offer for millions. You decide to not share how much, and never actually tell anyone how much you specifically made. It’s not their business. And you like to just wear jeans and t-shirts, and don’t really like to drive, so you don’t ever show that you were rich.</p>
+                    
+                    <p>Part of the buyout offer was a very well paying job maintaining the website for the company that bought Reddit.</p>
+                    
+                    <p>You last for less than a day before you quit. It was going to be a soul sucking job in you opinion, and you wanted no part of it. You wanted to help save the world, not just sit and make money.</p>
+                    
+                    <p>You start working in social activism. You start something called the Open Library, in order to try and share books and information online. And it is moderately successful, but not successful enough. While attending a conference, you hear about something called PACER. PACER is the system within which court files can be viewed. It costs money to look up files using PACER, which was illegal. The law states that PACER could charge users for using it, but only to cover the costs, and not to make any profit. The law is public record, and should not be hidden. However, PACER was making a profit for the courts. Aaron Swartz took up a challenge to go to a library that had free access to the PACER documents, and downloaded gigabytes of data. You then work to get the PACER issue public, and it garners attention. Due to public outcry, you help to make PACER free to the public. But in the process of doing so, the FBI arrests you and questions you. No charges are brought on you, but they surveil your parents house, and try entering it. They also try different intimidation tactics to try and get you to stop. But the information you downloaded was public record, and you got them from a free terminal. There was no crime that you committed, but you still upset them. You make enemies.</p>
+                    
+                    <img src="http://assets.bwbx.io/images/i1Kf_he75Yy4/v1/750x-1.jpg">
+                    
+                    <p>You eventually “win” in the PACER battle, and move on to other things. You start to really pay attention to the things that keep the powerful in power, and come to the conclusion that it really is information. You start working in law offices as a millionaire, unpaid intern just to learn, and your attention is brought to the online, scientific journal subscription website called JSTOR. JSTOR is a service that universities pay for to give their students access to a large library of scholarly articles. The issue is that JSTOR is expensive, and it makes it so in order to learn anything, you have to enroll in university. It also forces people that write scholarly articles to give up their copyright of their work to JSTOR in order to have their work seen. The majority of the money gained from the JSTOR service is kept by JSTOR themselves, and an incredibly small amount is given to the creator. </p>
+                    
+                    <p>You are considering doing the same thing to JSTOR that you did with PACER. But you know that this is riskier. Downloading the files is not illegal, as you have paid access to JSTOR from being in MIT university. But sharing the files would be illegal.</p>
+                    
+                    <p>You have a decision to make. Do you download the files from JSTOR, or do you try to sue JSTOR?</p>
+
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BB', 'opt3BBA')" type="button">You download the files from JSTOR.</button></button>
+                        <button onclick="optionSelect('opt2BB', 'opt3BBB')" type="button">You try suing JSTOR for illegal practices.</button>
+                    </div>
+                </div>
+                        
+                        <div class="option hidden" id="opt3BBA">
+                            <p>You decide to download the files from JSTOR. You leave a computer inside of a MIT closet in the basement, and write a script to download files for days on end. MIT notices the surge in activity, and notify JSTOR. They launch an investigation, and someone finds your computer. They set up a camera to watch where the computer is, and eventually see you come in to switch out the hard drives. </p>
+
+                            <p>You are then arrested on the street, and are forcibly detained. They charge you with charges that ultimately make no sense. You had not actually shared anything. All you had done was download some files you were legally allowed to download. They essentially arrest you for downloading too many files.</p>
+                            
+                            <p>JSTOR seeks to press charges, and the case is given to a prosecutor from Boston who puts his reputation on the line to make an example out of you. He tries to charge you with essentially hacking MIT, which you did not do, as well as other cyber crimes. He offers you a plea bargain, which was 6 months in jail, a year of supervision, during which time you would not be allowed to use any computers. You refuse, as you feel you have done nothing wrong.</p>
+                            
+                            <p>You continue your work while the court case continues.</p>
+                            
+                            <p>At the same time, the “Stop Online Piracy Act” (SOPA) was about to be voted on in the Senate and House of Representatives. SOPA would give the power to the Internet Service Providers to police user internet activity for content creators. Essentially, it would make it so that the already illegal act of downloading things like movies would be policed by the people providing you the Internet, such as Comcast or Time Warner. It would be like if the electric company were monitoring how much electricity you used to see if you were potentially doing something illegal. </p>
+                                                        
+                            <p>You strongly oppose this. You understand that this would completely ruin the internet as we know it. It would make so that anything you do on the internet would be monitored and policed. And instead of relying on the police to catch criminals, it would rely on a company to do so. </p>
+                                                        
+                            <p>You understand this because you are educated about the topic, not because you are intelligent. You get that it really comes down to education. So you seek to educate people on the topic. You start a website called <a target=”_blank” href=”https://demandprogress.org/”>Demand Progress</a> to get people to petition against SOPA and other non-progressive laws and ideas.</p>
+                            
+                            <img src="https://secure.actblue.com/x/object/actblue-images/brandings/header_images/1445/large.jpg?1431975052">
+                            
+                            <p>You start going on the news to speak out against this. You write a program that people could use to automatically call Congressmen. You go out of your way to educate people. And you help convince different websites to go black on a January 18th, 2012. Wikipedia, Reddit, Craiglist, and Twitter were among the hundreds of websites that shut down their services for 1 day in protest. </p>
+                            
+                            <img src="http://assets2.motherboard.tv/content-images/contentimage/no-slug/42be3346efcf5b599c49cc03d6c9a046.jpg">
+                                                        
+                            <p>And it works. Against all odds, it actually works. </p>
+                                                        
+                            <p>People notice that the websites they use weren’t working properly. They had educational material, and explained why they were doing this. They also told people what they could do about it, which was to call or email their representatives. And in the course of 1 day, Congress had gone overnight from 80 for and 31 against to 65 for and 101 against.</p>
+                            
+                            <h2>You now take on the role of Taren Stinebrickner-Kauffman, Aaron Swartz’s girlfriend.</h2>
+                            
+                            <p>You are worried about Aaron. When you first started dating, he wouldn’t tell you what was going on with the court case. But while Aaron was fighting SOPA, the prosecutor from Boston added more charges based on archaic laws written before computers were a household item. They drag Aaron’s family through the dirt, even though they did nothing wrong. You are even briefly arrested regarding the case, despite not knowing Aaron when he downloaded the files from JSTOR. His small fortune he made from working on Reddit is depleted, and he has to ask you and his parents for money to support him. His friends and family also set up a legal defense fund for him.</p>
+                            
+                            <p>But all of the struggles over the last 2 years have taken their toll. Aaron had lost weight, were constantly anxious, rarely slept. And even his big SOPA win didn’t help. It actually made it worse, as it forced the prosecutors to double down and try harder to win. In the end, you felt that Aaron would win the case, as he had not done anything wrong or illegal.</p>
+                            
+                            <p>On January 11th, 2013, you go to work, leaving Aaron at home. You can see he was depressed, so you go to his friends house to try and plan a dinner party to cheer him up. </p>
+                            
+                            <p>You come home to find Aaron hanging from his ceiling, dead, with no note.</p>
+                            
+                            <p>This was the true story.</p>
+                            
+                            <img src="http://freeculture.org/files/2013/01/Aaron_Swartz.jpg">
+                            
+                        <div id="controls">
+                            <button type="button" onClick="history.go(0)">Click to Replay</button>
+                        </div>
+
+
+                        </div>
+                
+                         <div class="option hidden" id="opt3BBB">
+                            <p>You attempt to sue JSTOR for illegal practices. You spend months putting together the case the JSTOR’s practices were harming the people of the United States, and cheating scholars of the money they were due. While you believe that information should be free, you know that the only way to win this is to make sure the money goes to the people who did the work, not the people who made themselves the middle man.</p>
+
+                            <p>At first, people laugh at your case. They don’t understand the real goal of it, until you started to talk to different universities. MIT and Harvard, 2 institutions you have a good relationship with by either attending school there, or working there, speak in favor of your cause. They don’t want to have to pay a huge yearly fee to JSTOR to get access to what used to be free. </p>
+                            
+                            <p>The lawyers you team up with are respected copyright lawyers, and they argue that the fact that scholars have to give up the right to their work in order to be on JSTOR is unethical, and at worst, potentially illegal. The argument gains traction, and the case rises through the court.</p>
+                            
+                            <p>Then, in January of 2013, your case is heard in the Supreme Court. </p>
+                            
+                            <p>In the end, the Supreme Court rules in favor of JSTOR, stating that they did not lie to scholars, or at what the JSTOR product was, so they have the right to continue their practice. Faced with this loss, you worry about if you can actually affect change at all. </p>
+                            
+                            <p>You needn’t worry. JSTOR’s reputation is destroyed. Universities across the nation cancel their JSTOR subscription, and instead rely on other services.</p>
+                            
+                            <p>At the same time, the “Stop Online Piracy Act” (SOPA) was about to be voted on in the Senate and House of Representatives. SOPA would give the power to the Internet Service Providers to police user internet activity for content creators. Essentially, it would make it so that the already illegal act of downloading things like movies would be policed by the people providing you the Internet, such as Comcast or Time Warner. It would be like if the electric company were monitoring how much electricity you used to see if you were potentially doing something illegal. </p>
+                            
+                            <p>You strongly oppose this. You understand that this would completely ruin the internet at we know it. It would make so that anything you do on the internet would be monitored and policed. And instead of relying on the police to catch criminals, it would rely on a company to do so. </p>
+                            
+                            <p>You understand this because you are educated about the topic, not because you are intelligent. You get that it really comes down to education. So you seek to educate people on the topic. You start a website called <a target=”_blank” href=”https://demandprogress.org/”>Demand Progress</a> to get people to petition against SOPA and other non-progressive laws and ideas. You start going on the news to speak out against this. You write a program that people could use to automatically call Congressmen. You go out of your way to educate people. And you help convince different websites to go black on a January 18th, 2016. Wikipedia, Reddit, Craiglist, and Twitter were among the hundreds of websites that shut down their services for 1 day in protest. </p>
+                            
+                            <p>And it works. Against all odds, it actually works. </p>
+                            
+                            <p>People notice that the websites they use weren’t working properly. They had educational material, and explained why they were doing this. They also told people what they could do about it, which was to call or email their representatives. And in the course of 1 day, Congress had gone overnight from 80 for and 31 against to 65 for and 101 against.</p>
+                            
+                            <p>After this major win, you continue to fight against different unjust laws restricting the flow of information, trying to give more power to the everyday person. You eventually get hired as the Chief Technology Advisor to the President, and are working to this day on making sure something like SOPA didn’t happen again.</p>
+
+                        </div> 
+ 
+        
+    </div>
+    
+    
+        <script> 
+        
+        function optionSelect(cur, sel){
+            document.getElementById(cur).className= 'option hidden';
+            document.getElementById(sel).className = 'option current';
+            window.scrollTo(0,0);
+        
+        }
+</script>
+</body>
