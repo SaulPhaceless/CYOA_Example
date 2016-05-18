@@ -1,14 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
 #header{
-    background-color: black;
+    background-color: #333;
     color: #eee;
     width:100%;
     margin: 0 auto;
     padding-top:5px;
     padding-bottom: 5px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body{
-    background-color: white;
+    background-color: #003459;
     text-align: center;
 }
 
@@ -27,22 +30,24 @@ img {
 }
 
 .option{
-    background-color: grey;
-    padding: 25px;
+    background-color: #8CA0A7;
+    padding: 10px;
     border-radius:1px;
-    text-align: left;
-    
+}
+
+.gameOver{
+    color:red;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #controls{
     background-color: #333;
     color: #eee;
-    width: 100%;
+    width:100%;
     margin: 0 auto;
     padding-top:5px;
     padding-bottom: 5px;
     border-radius:1px;
-    text-align: center;
 }
 
 button{
@@ -78,7 +83,7 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
                               `b  `       '  d'
                                `             '
 
-                    DO NOT TOUCH ANYTHING BELOW THIS LINE
+    DO NOT TOUCH ANYTHING BELOW THIS LINE
 ********************************************************************************************/
 
 

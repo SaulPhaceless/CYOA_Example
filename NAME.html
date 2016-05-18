@@ -1,17 +1,177 @@
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="templateCYOAGame">
+    <meta name="author" content="nickgutierrez">
+
+    <title>CYOA - Template</title>
+
+</head>
+<body>
+    <div id="header">
+        <h1>TITLE</h1>
+        <h3>A Choose Your Own Adventure Story Game.</h3>
+        <h5>By NAME</h5>
+    </div>
+    
+    <div id="mainContent">
+        <div class="option current" id="start">
+            <p>Introduction</p>
+            <p>Are you ready to play?</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('start', 'opt00')" id="startGame" type="button">Start Game</button>
+            </div>
+        </div>
+
+<!-- Option 0 -->
+
+        <div class="option hidden" id="opt00">
+            
+            <p>Choice 00</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt00', 'opt1A')" id="button1A" type="button">Choice 1A</button>
+                <button onclick="optionSelect('opt00', 'opt1B')" id="button1B" type="button">Choice 1B</button>
+            </div>
+        </div>
+
+<!-- Option 1A -->
+
+        <div class="option hidden" id="opt1A">
+            <p>Choice 1A</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1A', 'opt2AA')" id="button2AA" type="button">2AA</button>
+                <button onclick="optionSelect('opt1A', 'opt2AB')" id="button2AB" type="button">2AB</button>
+            </div>
+        </div>
+        
+<!-- Option 2AA -->
+
+                <div class="option hidden" id="opt2AA">
+                    <p>Choice 2AA</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2AA', 'opt3AAA')" type="button">3AAA</button>
+                        <button onclick="optionSelect('opt2AA', 'opt3AAB')" type="button">3AAB</button>
+                    </div>
+                </div>
+            
+<!-- Option 3AAA -->
+
+                         <div class="option hidden" id="opt3AAA">
+                            <p>End 3AAA</p>
+                        </div>
+
+<!-- Option 3AAB -->
+
+                         <div class="option hidden" id="opt3AAB">
+                            <p>End 3AAB</p>
+                        </div>
+
+<!-- Option 2AB -->
+
+                <div class="option hidden" id="opt2AB">
+                    <p>Choice 2AB</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2AB', 'opt3ABA')" type="button">3ABA</button>
+                        <button onclick="optionSelect('opt2AB', 'opt3ABB')" type="button">3ABB</button>
+                    </div>
+                </div>
+                        
+<!-- Option 3ABA -->
+
+                        <div class="option hidden" id="opt3ABA">
+                            <p>End 3ABA</p>
+                        </div>
+                
+<!-- Option 3ABB -->
+
+                         <div class="option hidden" id="opt3ABB">
+                            <p>End 3ABB</p>
+                        </div>
+                      
+<!-- Option 1B -->
+  
+                        
+        <div class="option hidden" id="opt1B">
+            <p>Choice 1B</p>
+    
+            <div id="controls">
+                <button onclick="optionSelect('opt1B', 'opt2BA')" id="button2BA" type="button">2BA</button>
+                <button onclick="optionSelect('opt1B', 'opt2BB')" id="button2BB" type="button">2BB</button>
+            </div>
+        </div>
+        
+<!-- Option 2BA -->
+
+                <div class="option hidden" id="opt2BA">
+                    <p>Choice 2BA</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BA', 'opt3BAA')" type="button">3BAA</button>
+                        <button onclick="optionSelect('opt2BA', 'opt3BAB')" type="button">3BAB</button>
+                    </div>
+                </div>
+                
+<!-- Option 3BAA -->
+
+                         <div class="option hidden" id="opt3BAA">
+                            <p>End 3BAA</p>
+                        </div>
+
+<!-- Option 3BAB -->
+
+                         <div class="option hidden" id="opt3BAB">
+                            <p>End 3BAB</p>
+                        </div>
+            
+<!-- Option 2BB -->
+
+                <div class="option hidden" id="opt2BB">
+                    <p>Choice 2BB</p>
+            
+                    <div id="controls">
+                        <button onclick="optionSelect('opt2BB', 'opt3BBA')" type="button">3BBA</button>
+                        <button onclick="optionSelect('opt2BB', 'opt3BBB')" type="button">3BBB</button>
+                    </div>
+                </div>
+                        
+<!-- Option 3BBA -->
+
+                        <div class="option hidden" id="opt3BBA">
+                            <p>End 3BBA</p>
+                        </div>
+                
+<!-- Option 3BBB -->
+
+                         <div class="option hidden" id="opt3BBB">
+                            <p>End 3BBB</p>
+                        </div> 
+ 
+        
+    </div>
+    
+<style>
+    
 #header{
-    background-color: #333;
+    background-color: black;
     color: #eee;
     width:100%;
     margin: 0 auto;
     padding-top:5px;
     padding-bottom: 5px;
-    font-family: 'Press Start 2P', cursive;
 }
 
 body{
-    background-color: #003459;
+    background-color: white;
     text-align: center;
 }
 
@@ -30,24 +190,22 @@ img {
 }
 
 .option{
-    background-color: #8CA0A7;
-    padding: 10px;
+    background-color: grey;
+    padding: 25px;
     border-radius:1px;
-}
-
-.gameOver{
-    color:red;
-    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+    
 }
 
 #controls{
     background-color: #333;
     color: #eee;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     padding-top:5px;
     padding-bottom: 5px;
     border-radius:1px;
+    text-align: center;
 }
 
 button{
@@ -69,7 +227,7 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
 9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
  9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
   `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
-    `9XXXXXXXXXXXP' `9XX'   DIE    `98v8P'  HUMAN   `XXP' `9XXXXXXXXXXXP'
+    `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'
         ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
                         )b.  .dbo.dP'`v'`9b.odb.  .dX(
                       ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
@@ -83,7 +241,7 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
                               `b  `       '  d'
                                `             '
 
-    DO NOT TOUCH ANYTHING BELOW THIS LINE
+                    DO NOT TOUCH ANYTHING BELOW THIS LINE
 ********************************************************************************************/
 
 
@@ -515,4 +673,16 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
+} 
+    
+</style>    
+
+<script> 
+        
+        function optionSelect(cur, sel){
+            document.getElementById(cur).className= 'option hidden';
+            document.getElementById(sel).className = 'option current';
+        
+        }
+</script>
+</body>
